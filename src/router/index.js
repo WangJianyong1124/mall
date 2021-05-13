@@ -1,16 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 // 导入Home组件
-const Home = () => import('@/components/content/home/Home')
+const Home = () => import('@/views/home/Home')
 
 // 导入Category组件
-const Category = () => import('@/components/content/category/Category')
+const Category = () => import('@/views/category/Category')
 
 // 导入Shopcart组件
-const Shopcart = () => import('@/components/content/shopcart/Shopcart')
+const Shopcart = () => import('@/views/shopcart/Shopcart')
 
 // 导入Profile组件
-const Profile = () => import('@/components/content/profile/Profile')
+const Profile = () => import('@/views/profile/Profile')
 
 const routes = [
   {
