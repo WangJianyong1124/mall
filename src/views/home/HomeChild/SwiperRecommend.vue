@@ -35,11 +35,16 @@ export default {
   text-align: center;
 /*  设置下面的灰色部分*/
   border-bottom: 10px solid #f1f1f1;
+  font-size: 12px;
+}
+
+.recommend-items {
+  flex: 1;
 }
 
 /*因为传过来的数据图片可能不一致 所以需要设置以下图片的样式*/
-.recommend img{
-  width: 90%;
+.recommend-items img{
+  width: 80%;
   margin-bottom: 5px;
 }
 </style>

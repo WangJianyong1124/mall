@@ -13,3 +13,19 @@ export function getHomeMultidata() {
   })
 }
 
+
+/*
+封装一个接收商品信息的方法
+  type: 接收商品的类型(流行、新款、精选)
+
+*/
+export function getHomeGoods(type, page) {
+  return request({
+    url: '/home/data',
+    params: {
+      type,
+      page
+    }
+  })
+}
+
