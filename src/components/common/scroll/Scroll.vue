@@ -37,7 +37,10 @@ export default {
       //  要想获取滚动的x 和y 值 需要添加probeType属性
       probeType: this.probeType,
     //  监听上拉动作
-      pullUpLoad: this.pullUpLoad
+      pullUpLoad: this.pullUpLoad,
+
+    //  监听图片 可以解决商品加载出来之后偶尔滑不动的bug
+      observeImage: true
     })
 
   //  2 监听滚动位置
