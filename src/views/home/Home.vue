@@ -68,7 +68,9 @@ export default {
       //  记录当前显示的数据的key
       currentType: 'pop',
       //  保存返回顶部按钮是否显示
-      isShowToTop: false
+      isShowToTop: false,
+
+      isFixTop: false
     }
   },
   components: {
@@ -94,6 +96,7 @@ export default {
     this.getHomeGoods('pop')
     this.getHomeGoods('new')
     this.getHomeGoods('sell')
+
   },
   methods: {
 
@@ -159,27 +162,31 @@ export default {
 <style scoped>
 
 #home {
-  padding-top: 44px;
+  /*padding-top: 44px;*/
   height: 100vh;
   position: relative;
 }
 
 .home-nav {
+/*
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+*/
 
   color: #fff;
   background-color: var(--color-tint);
 
   z-index: 999;
 }
+/*
 
 .tabControl {
   position: sticky;
   top: 44px;
 }
+*/
 
 .content {
   position: absolute;
@@ -189,4 +196,5 @@ export default {
   right: 0;
   bottom: 49px;
 }
+
 </style>

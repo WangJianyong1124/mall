@@ -58,12 +58,12 @@ export default {
   methods: {
     //  封装一个滚动到指定位置的方法
     scrollTo(x, y, time = 500) {
-      this.scroll.scrollTo(x, y, time)
+      this.scroll && this.scroll.scrollTo(x, y, time)
     },
 
   //  封装完成加载更多
     finishLoad() {
-      this.scroll.finishPullUp()
+      this.scroll && this.scroll.finishPullUp()
     }
   }
 }
